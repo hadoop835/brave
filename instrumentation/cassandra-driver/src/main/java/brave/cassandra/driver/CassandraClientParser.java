@@ -11,7 +11,7 @@ import zipkin.Constants;
  * Provides reasonable defaults for the data contained in cassandra client spans. Subclass to
  * customize, for example, to add tags based on response headers.
  */
-public class CassandraDriverParser {
+public class CassandraClientParser {
 
   /** Returns the span name of the statement. Defaults to the lower-camel case type name. */
   public String spanName(Statement statement) {
